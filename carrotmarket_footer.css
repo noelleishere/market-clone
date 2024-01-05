@@ -23,8 +23,26 @@ footer {
   cursor: pointer;
 }
 
+@keyframes icons-doong-doong {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .fotter-icons__img {
   width: 35px;
+}
+
+.fotter-icons:hover .fotter-icons__img {
+  animation: 1s icons-doong-doong;
 }
 
 .fotter-icons__desc {
